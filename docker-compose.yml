@@ -1,0 +1,10 @@
+version: '3'
+services:
+  database:
+    image: mongo:4.0.18
+    restart: always
+    ports:
+     - 27017:27017
+    volumes:
+    - /opt/mongodb:/data/db
+    #- /home/ubuntu/bakk/mongodb:/data/db
